@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+    <title>Rajat Parashar Resume</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="./vendor/bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./vendor/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style>
+    body{
+      font-size: 12px;
+    }
+    body>.container{
+      border: 1px solid #dfdfdf;
+      box-shadow: 0px 0px 12px -6px rgba(0, 0, 0, 0.5);
+      padding: 0px;
+      width:800px;
+    }
+    .heading{
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .sub-heading{
+      font-size: 13px;
+      font-weight: bold;
+    }
+      ul >li{
+        font-weight: bold;
+      }
+      header{
+        background-color: #f8f8f8;
+
+      }
+      .navbar{
+        border-radius: 0px;
+        border-width: 1px 0px 1px;
+        min-height: 40px;
+      }
+      .navbar .navbar-nav{
+        display: table;
+        margin: auto;
+        clear: both;
+        float: none;
+        width: 60%;
+      }
+
+      .navbar .navbar-nav li {
+        display: table-cell;
+        float: none;
+      }
+
+      .navbar .navbar-nav li a{
+              text-align: center;
+              padding-top: 10px;
+              padding-bottom: 10px;
+        }
+        .navbar .navbar-nav li a.ra-linkedin{
+                background: url("./linked.png") no-repeat;
+                background-position: -1% -2px;
+                background-size: 45px 41px;
+                color: #007bb6;
+          }
+          .navbar .navbar-nav li a.ra-facebook{
+                  background: url("./facebook.png") no-repeat;
+                  background-position: -4% -4px;
+                  background-size: 45px 41px;
+                  color: #3b5998;
+            }
+            .navbar .navbar-nav li a.ra-twitter{
+                    background: url("./twitter.png") no-repeat;
+                    background-position: -2% -1px;
+                    background-size: 45px 41px;
+                    color: #54ABEE;
+              }
+
+      .main-header{
+        padding: 50px 50px 10px;
+        }
+        p.name{
+          font-size: 3.5em;
+        }
+        p.name>span{
+          font-size: 12px;
+          position: absolute;
+        }
+      section{
+        padding:10px 50px 50px;
+      }
+      .main-header ul>li.item{
+        font-weight: normal;
+        width: 50%;
+        display: inline-block;
+        float: left;
+        margin: 2px auto;
+        }
+      .main-header ul>li.item > span{
+        font-weight: bold;
+      }
+      .quote{
+        padding: 30px 10px 0px 60px;
+        position: relative;
+      }
+      .quote:before{
+        content: "";
+        background: transparent url("./quote-mark.png") no-repeat;
+        position: absolute;
+        top: 10px;
+        left: 2%;
+        width: 55px;
+        height: 40px;
+        background-position: 6px 2px;
+        background-size: cover;
+      }
+      #why-i ul{
+        padding-left: 10px;
+      }
+      #why-i ul{
+        padding-left: 10px;
+      }
+      #skill > ul{
+        padding-left: 10px;
+      }
+      #education ul{
+        position: relative;
+        list-style-type:none;
+      }
+      #education ul > li{
+        position: relative;
+        padding-left: 5px;
+      }
+      #education ul:before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 5%;
+        width: 2px ;
+        height: 100%;
+        background: #000;
+        z-index: -1;
+      }
+      #education ul> li:before{
+        content: "";
+position: absolute;
+top: 33%;
+left: -25px;
+width: 6px;
+height: 6px;
+background: #000;
+}
+#education ul> li:after{
+  content: "";
+position: absolute;
+top: 45.8%;
+left: -22px;
+width: 20px;
+height: 2px;
+background: #000;
+}
+#experience .heading > sub{
+    color:rgba(0, 0, 0, 0.6);
+  }
+  #experience .exp-item{
+      position: relative;
+    }
+    #experience  .col-md-9,.col-md-3{
+        padding: 0;
+      }
+    #experience .exp-item p{
+        margin: 30px 0px 10px 50px;
+      }
+      #experience p.period{
+          margin-top: 30px;
+          font-weight: bold;
+        }
+    #experience .exp-item > .time{
+        position: absolute;
+        font-size: 4em;
+        top:-70%;
+        left: 8%;
+        background: transparent;
+
+      }
+      #hobbies ul{
+        display: table;
+        margin: auto;
+        width: 100%;
+      }
+
+      #hobbies ul>li{
+        display: table-cell;
+        text-align: center;
+
+      }
+    </style>
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./vendor/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+<div class="container">
+  <header>
+    <div class="main-header">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="name">Rajat Parashar
+            <br /><span>Web Developer &amp; Programmer</span>
+          </p>
+        </div>
+        <div class="col-md-6" style="padding:0px;">
+          <ul class="list-unstyled" style="padding-top:20px;">
+            <li class="item"><span class="glyphicon glyphicon-phone"></span> +91-8054745475</li>
+            <li class="item"><span class="glyphicon glyphicon-home"></span> Merrut ,U.P.</li>
+            <li class="item"><span class="glyphicon glyphicon-envelope"></span>dev.rajatparashar@gmail.com</li>
+          <!--  <li class="item"><span class="glyphicon glyphicon-globe"></span>rajatparashar.blogspot.com</li>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-default">
+      <ul class="nav navbar-nav ">
+       <li><a href="https://www.linkedin.com/in/rajatparashar47" class="ra-linkedin">/rajatparashar</a></li>
+        <li><a href="https://www.facebook.com/rajat47hitman" class="ra-facebook">/rajat47hitman</a></li>
+         <li><a href="https://twitter.com/rajatparashar6"  class="ra-twitter">/rajatparashar6</a></li>
+     </ul>
+    </nav>
+  </header>
+  <section>
+    <div class="row">
+      <div class="col-md-6">
+        <fieldset id="about">
+          <legend class =" heading">About Me</legend>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        </fieldset>
+        <fieldset id="why-i">
+          <legend class =" heading">Why I Am Best Choice</legend>
+          <ul type="square">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </fieldset>
+
+        <fieldset id='skill'>
+          <legend class =" heading">Work Skills</legend>
+          <ul type="square">
+            <li>Professtional Skills
+              <ul type="disc">
+                <li></li>
+                <li></li>
+                <li></li>
+                </ul>
+            </li>
+            <li>Personal Skills
+                <ul type="disc">
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  </ul>
+                </li>
+
+          </ul>
+
+        </fieldset>
+
+        <fieldset>
+          <legend class =" heading">LANGuaGE</legend>
+          <div class="row">
+            <div class="col-md-4">
+              <img class="img-circle" src="" alt="mother language" />
+            </div>
+            <div class="col-md-4">
+              <img class="img-circle" src="" alt="mother language" />
+            </div>
+            <div class="col-md-4">
+              <img class="img-circle" src="" alt="mother language" />
+            </div>
+          </div>
+
+        </fieldset>
+
+
+      </div>
+      <div class="col-md-6">
+        <fieldset id="education">
+          <legend class ="heading">Education</legend>
+          <ul type="square">
+            <li>Professtional Skills</li>
+            <li>Personal Skills</li>
+            <li>Personal Skills</li>
+            <li>Personal Skills</li>
+            <li>Personal Skills</li>
+            <li>Personal Skills</li>
+          </ul>
+
+        </fieldset>
+        <fieldset id="experience">
+          <legend class =" heading">Experience&nbsp;&nbsp;<sub>in months</sub></legend>
+          <div class="row">
+            <div class="col-md-9">
+              <div class="exp-item">
+                <p >Lorem ipsum dolor sit amet,
+                   consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt
+                     ut labore et dolore</p>
+                <div class="time">4</div>
+              </div>
+              </div>
+              <div class="col-md-3">
+                <p class="period">JAN-JUlY,2016</p>
+                </div>
+
+            <div class="col-md-12"></div>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend class =" heading">Objectives</legend>
+          <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+        </fieldset>
+        <fieldset id="hobbies">
+          <legend class =" heading">Hobbies</legend>
+            <ul class="list-unstyled list-inline">
+              <li>ames</li>
+              <li>sdsad</li>
+              <li>sdasds</li>
+            </ul>
+
+        </fieldset>
+
+
+
+
+      </div>
+    </div>
+
+  </section><!-- NOTE: main section -->
+
+
+
+</div><!-- NOTE: outer container -->
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./vendor/jQuery/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./vendor/bootstrap-3.3.7/js/bootstrap.js"></script>
+    <script src="./library/js/custom.js" ></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./vendor/ie10-viewport-bug-workaround.js"></script>
+
+
+</body></html>
