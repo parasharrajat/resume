@@ -37,7 +37,7 @@
       color: #333;
     }
     .heading{
-      font-size: 14px;
+      font-size: 24px;
       font-weight: bold;
       text-transform: uppercase;
     }
@@ -77,19 +77,19 @@
         }
         .navbar .navbar-nav li a.ra-linkedin{
                 background: url("./linked.png") no-repeat;
-                background-position: -1% -2px;
+                background-position: 11% -2px;
                 background-size: 45px 41px;
                 color: #007bb6;
           }
           .navbar .navbar-nav li a.ra-facebook{
                   background: url("./facebook.png") no-repeat;
-                  background-position: -4% -4px;
+                  background-position: 11% -4px;
                   background-size: 45px 41px;
                   color: #3b5998;
             }
             .navbar .navbar-nav li a.ra-twitter{
                     background: url("./twitter.png") no-repeat;
-                    background-position: -2% -1px;
+                    background-position: 12% -1px;
                     background-size: 45px 41px;
                     color: #54ABEE;
               }
@@ -101,8 +101,10 @@
           font-size: 3.5em;
         }
         p.name>span{
-          font-size: 12px;
-          position: absolute;
+          font-size: 22px;
+position: absolute;
+top: 92px;
+left: 20px;
         }
       section{
         padding:10px 40px 0px;
@@ -118,7 +120,7 @@
         font-weight: bold;
       }
       .quote{
-        padding: 30px 10px 0px 60px;
+        padding: 30px 10px 0px 65px;
         position: relative;
       }
       .quote:before{
@@ -148,20 +150,20 @@
       #education ul > li{
         position: relative;
         padding-left: 5px;
-        line-height: 2px;
+        line-height: 1;
         font-weight: normal;
         margin-top: 25px;
         text-transform: capitalize;
       }
       #education ul > li p.date{font-size: 1.2em;font-weight: bold;}
-        #education ul > li p.title{font-size: 1.2em; color:#333;font-weight: bold;line-height: 14px;}
-          #education ul > li p.from{line-height: 14px;}
+        #education ul > li p.title{font-size: 1.2em; color:#333;font-weight: bold;line-height: 1em;}
+          #education ul > li p.from{line-height: 1em;}
 
         #education ul:before{
         content: "";
         position: absolute;
         top: 0px;
-        left: 5%;
+        left: 2.8%;
         width: 2px ;
         height: 100%;
         background: #000;
@@ -170,7 +172,7 @@
       #education ul> li:before{
         content: "";
 position: absolute;
-top: 2%;
+top: 8%;
 left: -25px;
 width: 6px;
 height: 6px;
@@ -179,7 +181,7 @@ background: #000;
 #education ul> li:after{
   content: "";
 position: absolute;
-top: 3.8%;
+top: 9.8%;
 left: -22px;
 width: 20px;
 height: 2px;
@@ -195,7 +197,7 @@ background: #000;
         padding: 0;
       }
     #experience .exp-item p{
-        margin: 30px 0px 10px 50px;
+        margin: 30px 0px 10px 65px;
       }
       #experience p.period{
           margin-top: 30px;
@@ -205,7 +207,7 @@ background: #000;
         position: absolute;
         font-size: 4em;
         top:-48%;
-        left: 8%;
+        left: 3%;
         background: transparent;
 
       }
@@ -221,19 +223,19 @@ background: #000;
         text-transform: capitalize;
 
       }#hobbies ul>li>div{
-        width: 65px;
+        width: 115px;
 margin: auto;
-height: 65px;
+height: 115px;
 border: 1px solid #333;
-line-height: 13px;
-padding: 25px 0px 0px 0px;
+line-height: 0.8em;
+padding: 46px 0px 0px 0px;
       }
       #skill >dl{
         display: table;
         float: none;
       }
       #skill dt{
-        font-size: 14px;
+        font-size: 24px;
       }
       #skill  >dl > span{
         display: table-cell;
@@ -445,7 +447,7 @@ padding: 25px 0px 0px 0px;
         <fieldset id="hobbies">
           <legend class =" heading">Hobbies</legend>
             <ul class="list-unstyled list-inline">
-              <li><div class="img-circle" style="padding-top:12px;">Video Games</div></li>
+              <li><div class="img-circle" style="padding-top:29px;">Video Games</div></li>
               <li><div class="img-circle">Football</div></li>
               <li><div class="img-circle">Traveling</div></li>
               <br />
@@ -482,7 +484,7 @@ padding: 25px 0px 0px 0px;
 
       $('#diagram-id-1').circleDiagram({
         "percent": "100",
-        "size": "100",
+        "size": "200",
         "borderWidth": "8",
         "bgFill": "#e2e2e2",
         "frFill": "#000",
