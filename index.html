@@ -24,9 +24,16 @@
     }
     body>.container{
       border: 1px solid #dfdfdf;
-      box-shadow: 0px 0px 12px -6px rgba(0, 0, 0, 0.5);
+    /*  box-shadow: 0px 0px 12px -6px rgba(0, 0, 0, 0.5);*/
       padding: 0px;
-      width:800px;
+    /*  width:800px;*/
+      color: #666;
+    }
+    fieldset{
+      margin-top: 10px;
+    }
+    .heading,.subheading,dt,#why-i>ul>li,.main-header p.name{
+      color: #333;
     }
     .heading{
       font-size: 14px;
@@ -87,7 +94,7 @@
               }
 
       .main-header{
-        padding: 50px 50px 10px;
+        padding: 30px 40px 10px;
         }
         p.name{
           font-size: 3.5em;
@@ -97,7 +104,7 @@
           position: absolute;
         }
       section{
-        padding:10px 50px 50px;
+        padding:10px 40px 0px;
       }
       .main-header ul>li.item{
         font-weight: normal;
@@ -140,8 +147,16 @@
       #education ul > li{
         position: relative;
         padding-left: 5px;
+        line-height: 2px;
+        font-weight: normal;
+        margin-top: 25px;
+        text-transform: capitalize;
       }
-      #education ul:before{
+      #education ul > li p.date{font-size: 1.2em;font-weight: bold;}
+        #education ul > li p.title{font-size: 1.2em; color:#333;font-weight: bold;line-height: 14px;}
+          #education ul > li p.from{line-height: 14px;}
+
+        #education ul:before{
         content: "";
         position: absolute;
         top: 0px;
@@ -154,7 +169,7 @@
       #education ul> li:before{
         content: "";
 position: absolute;
-top: 33%;
+top: 2%;
 left: -25px;
 width: 6px;
 height: 6px;
@@ -163,7 +178,7 @@ background: #000;
 #education ul> li:after{
   content: "";
 position: absolute;
-top: 45.8%;
+top: 3.8%;
 left: -22px;
 width: 20px;
 height: 2px;
@@ -188,7 +203,7 @@ background: #000;
     #experience .exp-item > .time{
         position: absolute;
         font-size: 4em;
-        top:-70%;
+        top:-48%;
         left: 8%;
         background: transparent;
 
@@ -196,13 +211,52 @@ background: #000;
       #hobbies ul{
         display: table;
         margin: auto;
-        width: 100%;
+
       }
 
       #hobbies ul>li{
-        display: table-cell;
         text-align: center;
+        margin: 5px;
+        text-transform: capitalize;
 
+      }#hobbies ul>li>div{
+        width: 65px;
+margin: auto;
+height: 65px;
+border: 1px solid #333;
+line-height: 13px;
+padding: 25px 0px 0px 0px;
+      }
+      #skill >dl{
+        display: table;
+        float: none;
+      }
+      #skill dt{
+        font-size: 14px;
+      }
+      #skill  >dl > span{
+        display: table-cell;
+        float: none;
+      }
+      #skill dd >ul>li{
+        text-transform: uppercase;
+      }
+      #lang >div{
+        text-align: center;
+        position: relative;
+        text-transform: capitalize;
+      }
+      #lang >div span{
+        text-align: center;
+        margin-top:5px;
+        display: block;
+      }
+      #lang >div span.mid-text{
+        position: absolute;
+        top: 31%;
+        margin: auto;
+        width: 60%;
+        left: 22%;
       }
     </style>
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -230,7 +284,7 @@ background: #000;
           <ul class="list-unstyled" style="padding-top:20px;">
             <li class="item"><span class="glyphicon glyphicon-phone"></span> +91-8054745475</li>
             <li class="item"><span class="glyphicon glyphicon-home"></span> Merrut ,U.P.</li>
-            <li class="item"><span class="glyphicon glyphicon-envelope"></span>dev.rajatparashar@gmail.com</li>
+            <li class="item"><span class="glyphicon glyphicon-envelope"></span> dev.rajatparashar@gmail.com</li>
           <!--  <li class="item"><span class="glyphicon glyphicon-globe"></span>rajatparashar.blogspot.com</li>-->
           </ul>
         </div>
@@ -248,53 +302,86 @@ background: #000;
     <div class="row">
       <div class="col-md-6">
         <fieldset id="about">
-          <legend class =" heading">About Me</legend>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <legend class =" heading">Career Summary</legend>
+          <p>I 'm an intellectual, independent and enthusiastic person. I can perform either individually or with a team while keeping the ability to lead the team. I 'm looking for a place where I can push me further to contribute in product modeling simultaneously respecting work ethics and face brainstorming milestones. If you want an employee with creative mind &amp; attention seeker and non degradable performance, why don't give me a chance? Go further down to see Why I am the best choice.</p>
 
         </fieldset>
         <fieldset id="why-i">
           <legend class =" heading">Why I Am Best Choice</legend>
           <ul type="square">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>I have experience of working in a team and how to succeed.</li>
+            <li>Good decision maker with problem solving abilities.</li>
+            <li>Successful Leader.</li>
+            <li>I have efficiency in submitting any task in time.</li>
           </ul>
         </fieldset>
 
         <fieldset id='skill'>
           <legend class =" heading">Work Skills</legend>
-          <ul type="square">
-            <li>Professtional Skills
-              <ul type="disc">
-                <li></li>
-                <li></li>
-                <li></li>
-                </ul>
-            </li>
-            <li>Personal Skills
-                <ul type="disc">
-                  <li></li>
-                  <li></li>
-                  <li></li>
-                  </ul>
-                </li>
+              <dl>
+                <span>
+                      <dt>Technical Skills</dt>
+                        <dd>
+                        <ul type="1">
+                          <li>Scripting
+                            <ul type="disc">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>SASS</li>
+                                <li>JAVASCRIPT</li>
+                            </ul></li>
+                          <li>Programming
+                            <ul type="disc">
+                                <li>PHP</li>
+                                <li>C++</li>
+                                <li>JS</li>
+                            </ul></li>
+                            <li>Tooling
+                              <ul type="disc">
+                                  <li>Wordpress</li>
+                                  <li>PhpMyAdmin</li>
+                                  <li>Apache Web Server</li>
+                                  <li>NPM</li>
+                                  <li>CAKEPHP</li>
+                              </ul></li>
+                            </ul>
+                      </dd>
+                    </span>
+                    <span>
 
-          </ul>
+                <dt>Personal Skills</dt>
+                  <dd>
+                    <ul type="disc">
+                      <li>Team Player</li>
+                      <li>Creativity</li>
+                      <li>Thinker</li>
+                      <li>Social Friendly</li>
+                      <li>Leadership</li>
+                      </ul>
+                    </dd>
+                  </span>
+
+                </dl>
 
         </fieldset>
 
-        <fieldset>
-          <legend class =" heading">LANGuaGE</legend>
+        <fieldset id="lang">
+          <legend class =" heading">Language</legend>
           <div class="row">
             <div class="col-md-4">
-              <img class="img-circle" src="" alt="mother language" />
+            <div id="diagram-id-1" class="diagram"></div>
+            <span class="mid-text">Mother Language</span>
+            <span>Hindi</span>
             </div>
             <div class="col-md-4">
-              <img class="img-circle" src="" alt="mother language" />
+            <div id="diagram-id-2" class="diagram"></div>
+            <span class="mid-text">Intermediate Level</span>
+            <span>English</span>
             </div>
             <div class="col-md-4">
-              <img class="img-circle" src="" alt="mother language" />
+            <div id="diagram-id-3" class="diagram"></div>
+            <span class="mid-text">Basic Level</span>
+            <span>Punjabi</span>
             </div>
           </div>
 
@@ -306,12 +393,30 @@ background: #000;
         <fieldset id="education">
           <legend class ="heading">Education</legend>
           <ul type="square">
-            <li>Professtional Skills</li>
-            <li>Personal Skills</li>
-            <li>Personal Skills</li>
-            <li>Personal Skills</li>
-            <li>Personal Skills</li>
-            <li>Personal Skills</li>
+            <li>
+              <p class="date">2011 </p>
+              <p class="title"> High School </p>
+              <p class="from">Board of High School &amp; Intermediate Education, U.P.</p>
+              <p class="marks">80%</p>
+             </li>
+             <li>
+               <p class="date">2013 </p>
+               <p class="title">Intermediate Examination</p>
+               <p class="from">Board of High School &amp; Intermediate Education, U.P.</p>
+               <p class="marks">71%</p>
+              </li>
+              <li>
+                <p class="date">2013-2017</p>
+                <p class="title">Bachelor in Computer Sciences</p>
+                <p class="from">Beant College Of Engineering &amp; Technology</p>
+                <p class="marks">69%</p>
+               </li>
+               <li>
+                 <p class="date">2015</p>
+                 <p class="title">Certification In Web Designing & Development In PHP</p>
+                 <p class="from">NETMAX Tech. PVT. LTD.<br>Chandigarh</p>
+                 <p class="marks"></p>
+                </li>
           </ul>
 
         </fieldset>
@@ -320,15 +425,12 @@ background: #000;
           <div class="row">
             <div class="col-md-9">
               <div class="exp-item">
-                <p >Lorem ipsum dolor sit amet,
-                   consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt
-                     ut labore et dolore</p>
+                <p >Primary Developer<br>For B.C.E.T , ERP system<br>web platform.<br>@192.168.6.42</p>
                 <div class="time">4</div>
               </div>
               </div>
               <div class="col-md-3">
-                <p class="period">JAN-JUlY,2016</p>
+                <p class="period">JAN-APRIL,2016</p>
                 </div>
 
             <div class="col-md-12"></div>
@@ -336,15 +438,18 @@ background: #000;
         </fieldset>
         <fieldset>
           <legend class =" heading">Objectives</legend>
-          <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class="quote">Dedicated and motivated engineering graduate seeking <b>INTERNSHIP</b> with your Organization.</p>
 
         </fieldset>
         <fieldset id="hobbies">
           <legend class =" heading">Hobbies</legend>
             <ul class="list-unstyled list-inline">
-              <li>ames</li>
-              <li>sdsad</li>
-              <li>sdasds</li>
+              <li><div class="img-circle" style="padding-top:12px;">Video Games</div></li>
+              <li><div class="img-circle">Football</div></li>
+              <li><div class="img-circle">Traveling</div></li>
+              <br />
+              <li><div class="img-circle">Innovation</div></li>
+              <li><div class="img-circle">Music</div></li>
             </ul>
 
         </fieldset>
@@ -370,7 +475,41 @@ background: #000;
     <script src="./vendor/jQuery/jquery.js"></script>
     <script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="./vendor/bootstrap-3.3.7/js/bootstrap.js"></script>
-    <script src="./library/js/custom.js" ></script>
+    <script src="./vendor/jQuery/jquery.circle-diagram.js"></script>
+    <script>
+    $(function() {
+
+      $('#diagram-id-1').circleDiagram({
+        "percent": "100",
+        "size": "100",
+        "borderWidth": "8",
+        "bgFill": "#e2e2e2",
+        "frFill": "#000",
+        "textSize": "0",
+      //	"textColor": "#585858"
+      });$('#diagram-id-2').circleDiagram({
+    		"percent": "75",
+    		"size": "100",
+    		"borderWidth": "8",
+    		"bgFill": "#e2e2e2",
+    		"frFill": "#000",
+    		"textSize": "0",
+    	//	"textColor": "#585858"
+    	});
+    	$('#diagram-id-3').circleDiagram({
+    		"percent": "25",
+    		"size": "100",
+        "borderWidth": "8",
+    		"bgFill": "#e2e2e2",
+    		"frFill": "#000",
+    		"textSize": "0",
+    	//	"textColor": "#585858"
+    	});
+    });
+
+
+
+    </script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./vendor/ie10-viewport-bug-workaround.js"></script>
 
