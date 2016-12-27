@@ -47,10 +47,8 @@
       font-size: 23px;
       font-weight: bold;
     }
-
       header{
         background-color: #f8f8f8;
-
       }
       .navbar{
         border-radius: 0px;
@@ -64,12 +62,10 @@
         float: none;
         width: 60%;
       }
-
       .navbar .navbar-nav li {
         display: table-cell;
         float: none;
       }
-
       .navbar .navbar-nav li a{
               text-align: center;
               padding-top: 10px;
@@ -77,23 +73,22 @@
         }
         .navbar .navbar-nav li a.ra-linkedin{
                 background: url("./linked.png") no-repeat;
-                background-position: -1% -2px;
+                background-position: 29px -2px;
                 background-size: 45px 41px;
                 color: #007bb6;
           }
           .navbar .navbar-nav li a.ra-facebook{
                   background: url("./facebook.png") no-repeat;
-                  background-position: -4% -4px;
+                  background-position: 29px -4px;
                   background-size: 45px 41px;
                   color: #3b5998;
             }
             .navbar .navbar-nav li a.ra-twitter{
                     background: url("./twitter.png") no-repeat;
-                    background-position: -2% -1px;
+                    background-position: 33px -1px;
                     background-size: 45px 41px;
                     color: #54ABEE;
               }
-
       .main-header{
         padding: 30px 40px 10px;
         }
@@ -123,15 +118,15 @@
       }
       .quote:before{
         content: "";
-        background: transparent url("./quote-mark.png") no-repeat;
-        position: absolute;
-        top: 10px;
-        left: 2%;
-        width: 55px;
-        height: 40px;
-        background-position: 6px 2px;
-        background-size: cover;
-      }
+  background: transparent url("./quote-mark.png") no-repeat;
+  position: absolute;
+  top: 4px;
+  left: -1%;
+  width: 75px;
+  height: 55px;
+  background-position: 6px 2px;
+  background-size: cover;
+}
       #why-i ul{
         padding-left: 10px;
       }
@@ -140,6 +135,10 @@
       }
       #skill > ul{
         padding-left: 10px;
+      }
+      #skill  dt{
+        text-transform: uppercase;
+        color: #666;
       }
       #skill dd>ul>li{
         text-transform: uppercase;
@@ -155,24 +154,21 @@
       }
       #education table{
         position: relative;
-        margin-left: 40px;
+        margin-left: 60px;
       }
       #education table td{
         vertical-align: top;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
     }
     #education table td:nth-child(2){
       text-align: right;
   }
-
       #education table tr{
         position: relative;
-        line-height: 9px;
+        line-height: 18px;
         font-weight: normal;
       }
       #education tr p.date, #education tr p.title{font-size: 1.2em; color:#333;font-weight: bold;text-transform: capitalize;}
-
-
         #education table:before{
         content: "";
         position: absolute;
@@ -185,21 +181,21 @@
       }
       #education tr:before{
         content: "";
-position: absolute;
-top: 2%;
-left: -25px;
-width: 6px;
-height: 6px;
-background: #666;
+  position: absolute;
+  top: 3.5%;
+  left: -46px;
+  width: 10px;
+  height: 10px;
+  background: #666;
 }
 #education tr:after{
   content: "";
-position: absolute;
-top: 5.8%;
-left: -22px;
-width: 20px;
-height: 2px;
-background: #666;
+  position: absolute;
+  top: 5.8%;
+  left: -37px;
+  width: 25px;
+  height: 4px;
+  background: #666;
 }
 #experience .heading > sub{
     color:rgba(0, 0, 0, 0.6);
@@ -208,17 +204,15 @@ background: #666;
     position: relative;
     padding: 0px 0px 0px 15px;
 margin-top: 15px;
-
     }
     #experience .exp-item:before{
       content: "";
-position: absolute;
-top: 6.5%;
-left: 0px;
-width: 6px;
-height: 6px;
-background: #666;
-
+  position: absolute;
+  top: 6.5%;
+  left: -4px;
+  width: 10px;
+  height: 10px;
+  background: #666;
       }
     #experience p.title{
         font-weight: bold;
@@ -234,7 +228,6 @@ background: #666;
 #curriculum ul,#achieve ul{
   padding-left: 10px;
 }
-
       #lang >div{
         text-align: center;
         position: relative;
@@ -255,7 +248,17 @@ background: #666;
       #diagram-1{
         background: url("./100.png") no-repeat;
         width: 100%;
-        height: 100px;
+        height: 182px;
+      }
+      #diagram-2{
+        background: url("./75.png") no-repeat;
+        width: 100%;
+        height: 182px;
+      }
+      #diagram-3{
+        background: url("./25.png") no-repeat;
+        width: 100%;
+        height: 182px;
       }
     </style>
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -318,7 +321,6 @@ background: #666;
             <li>I have efficiency in submitting any task in time.</li>
           </ul>
         </fieldset>
-
 </div>-->
 <div class="col-md-12">
         <fieldset id='skill'>
@@ -335,7 +337,6 @@ background: #666;
                                 <li>JAVASCRIPT</li>
                                 <li>PHP</li>
                                 <li>Basic C++</li>
-                                <li>JS</li>
                                 <li>Wordpress</li>
                                 <li>PhpMyAdmin</li>
                                 <li>Apache Web Server</li>
@@ -507,17 +508,17 @@ background: #666;
               <legend class =" heading">Language</legend>
               <div class="row">
                 <div class="col-md-4">
-                <div id="diagram-id-1" class="diagram"></div>
+                <div id="diagram-1" class="diagram"></div>
                 <span class="mid-text">Mother Language</span>
                 <span>Hindi</span>
                 </div>
                 <div class="col-md-4">
-                <div id="diagram-id-2" class="diagram"></div>
+                <div id="diagram-2" class="diagram"></div>
                 <span class="mid-text">Intermediate Level</span>
                 <span>English</span>
                 </div>
                 <div class="col-md-4">
-                <div id="diagram-id-3" class="diagram"></div>
+                <div id="diagram-3" class="diagram"></div>
                 <span class="mid-text">Basic Level</span>
                 <span>Punjabi</span>
                 </div>
@@ -528,7 +529,7 @@ background: #666;
   <div class="col-md-6">
     <fieldset id="hobbies">
       <legend class =" heading">Hobbies &amp; Interests</legend>
-      <p>Good at Video games, plays football, listen Calm Music, cooking ,programming</p>
+      <p>Good at Video games, plays football, listen Calm Music, cooking, programming</p>
       <p>Research on advance technologies, traveling historical places, absorbing physicological instincts.</p>
 
     </fieldset>
@@ -556,7 +557,6 @@ background: #666;
     <script src="./vendor/jQuery/jquery.circle-diagram.js"></script>
     <script>
     $(function() {
-
       $('#diagram-id-1').circleDiagram({
         "percent": "100",
         "size": "100",
@@ -584,9 +584,6 @@ background: #666;
     	//	"textColor": "#585858"
     	});
     });
-
-
-
     </script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="./vendor/ie10-viewport-bug-workaround.js"></script>
