@@ -1,4 +1,5 @@
 
+const isChrome = !!window.chrome;
 
 $(document).ready(function () {
 
@@ -27,6 +28,12 @@ $(document).ready(function () {
       setBtnFrame($(this));
     }
   });
+
+// Toogle download btn
+if(!isChrome){
+  $('#download-btn').remove();
+}
+
   // set download
   let intId = NaN;
   $('#download-btn').on('click', function () {
