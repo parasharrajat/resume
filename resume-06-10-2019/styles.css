@@ -14,12 +14,16 @@ header [class^="col"] {
   padding-left: 1rem;
 }
 
-header, .name, .designation {
-  padding-left: 1rem;
+header ul.social {
+  margin-left: -1rem;
 }
 
 fieldset+fieldset {
   margin-top: 1rem;
+}
+
+fieldset:last-child {
+  margin-bottom: 2rem;
 }
 
 .fieldset-heading {
@@ -51,7 +55,7 @@ fieldset+fieldset {
 }
 
 .summary {
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 
 .content {
@@ -110,4 +114,15 @@ fieldset+fieldset {
 
 .exp-item .projects ul {
   padding-left: 1.2rem;
+}
+
+@media print {
+  .container {
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none !important;
+  }
+  table, thead, tbody, tr, td, th, .table td, .table th {
+    background: transparent!important;
+  }
 }

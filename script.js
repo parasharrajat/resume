@@ -4,11 +4,14 @@ $(document).ready(function () {
   let selectedVr = "";
   const vrDrop = $('#vr-drop-btn');
   const resumeFr = $('#resume-frame');
-  const vrs = $('#vr-drop-btn .dropdown-menu > .dropdown-item');
-  const selectedItem = vrs.toArray().find(e => e.data("selected"));
+  const vrs = $('#vr-drop-btn + .dropdown-menu > .dropdown-item');
+  const fragement = new window.URL(window.location.href).hash;
+  const hasFrag = fragement && fragement.startsWith(`#resume-`);
+
+  const selectedItem = hasFrag && vrs.toArray().find(e => $(e).data("date") === fragement.split(`#resume-`)[1]) || vrs.toArray().find(e => $(e).data("selected"));
   if (selectedItem) {
-    selectedVr = selectedItem.text();
-    setBtnFrame(selectedItem);
+    selectedVr = $(selectedItem).text();
+    setBtnFrame($(selectedItem));
   }
 
   $('#vr-drop-btn + .dropdown-menu > .dropdown-item').on('click', function () {
@@ -21,4 +24,5 @@ $(document).ready(function () {
     vrDrop.text(item.text());
     resumeFr.prop("src", `resume-${item.data('date')}/index.html`);
   }
+
 });
