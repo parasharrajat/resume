@@ -13,17 +13,11 @@
 
   <!-- Bootstrap core CSS -->
   <link href="mylogo1.png" rel="shortcut icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
   <link href="./vendor/bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
-
   <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <link href="./vendor/ie10-viewport-bug-workaround.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
-
-
-  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-  <script src="./vendor/ie-emulation-modes-warning.js"></script>
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -46,7 +40,8 @@
             Oct 6, 2019
           </button>
           <div class="dropdown-menu flap-up" aria-labelledby="vr-drop-btn">
-            <a class="dropdown-item" href="#resume-06-10-2019" data-date="06-10-2019" data-selected="true">Oct 6, 2019</a>
+            <a class="dropdown-item" href="#resume-06-10-2019" data-date="06-10-2019" data-selected="true">Oct 6,
+              2019</a>
             <a class="dropdown-item" href="#resume-10-03-2019" data-date="10-03-2019">Mar 10, 2019</a>
           </div>
         </div>
@@ -56,14 +51,28 @@
   <main>
     <iframe id="resume-frame" src="" frameborder="0"></iframe>
   </main>
+  <div class="fab-btn">
+    <button class="btn btn-lg btn-light border-0 rounded-circle" type="button" id="download-btn" data-toggle="popover"
+      data-placement="top" data-title=" " data-template='<div class="popover" role="tooltip"><div class="arrow"></div><div class="card-body">
+          <h4 class="font-big--shoulder">Download Instructions</h4>
+          <ul class="pl-3">
+            <li>Set <b>Destinaton</b> to <code class="bg-light">Save as PDF</code></li>
+            <li>Set <b>Margins</b> to <code class="bg-light">none</code></li>
+            <li>Enable <b>Background Graphics</b></li>
+          </ul>
+          <div class="d-flex align-items-center">Download will start in <h4 id="d-time" class="ml-3 mb-0 d-inline font-big--shoulder"></h4></div>
+        </div></div>'>
+      <i class="fas fa-arrow-down off"></i>
+      <i class="fas fa-times on d-none"></i>
+    </button>
+  </div>
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="./vendor/jQuery/jquery.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="./vendor/ie10-viewport-bug-workaround.js"></script>
-  <script src="./vendor/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
-  <script src="./vendor/jQuery/jquery.circle-diagram.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="./vendor/bootstrap-4.3.1-dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 
 
