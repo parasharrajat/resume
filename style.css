@@ -16,17 +16,17 @@ body {
   font-family: 'Big Shoulders Text', cursive;
 }
 
-.navbar .vr-drop>[data-toggle="dropdown"], .navbar .vr-drop>[data-toggle="dropdown"]:active {
+.navbar [data-toggle="dropdown"], .navbar [data-toggle="dropdown"]:active {
   outline: none;
-  width: 12rem;
+  min-width: 12rem;
   box-shadow: none !important;
   background-color: #f8f9fa !important;
 }
 
-.navbar .vr-drop .dropdown-menu {
+.navbar .dropdown-menu {
   border-top: none;
   margin: 0;
-  width: 12rem;
+  min-width: 12rem;
   border-top-left-radius: 0;
   transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   border-top-right-radius: 0;
@@ -37,7 +37,7 @@ body {
   transform-origin: top;
 }
 
-.navbar .vr-drop.show>[data-toggle="dropdown"] {
+.navbar .dropdown.show>[data-toggle="dropdown"] {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }

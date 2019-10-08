@@ -50,20 +50,35 @@
 <body>
   <nav class="navbar navbar-light border-bottom">
     <div class="container">
-      <a class="navbar-brand font-big--shoulder" href="javascrpt:void()">
+      <a class="navbar-brand font-big--shoulder" href="./">
         <img alt="Brand" src="mylogo1.png" class="d-inline-block align-middle" width="86">
         My Curriculum Vitae
       </a>
-      <div class="form-inline ml-auto">
-        <div class="dropdown vr-drop">
-          <button class="btn btn-light border dropdown-toggle" type="button" id="vr-drop-btn" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Oct 6, 2019
-          </button>
-          <div class="dropdown-menu flap-up" aria-labelledby="vr-drop-btn">
-            <a class="dropdown-item" href="#resume-06-10-2019" data-date="06-10-2019" data-selected="true">Oct 6,
-              2019</a>
-            <a class="dropdown-item" href="#resume-10-03-2019" data-date="10-03-2019">Mar 10, 2019</a>
+      <div class="nav ml-auto">
+        <div class="form-group mb-0">
+          <label for="vr-drop-btn" class="mb-0">Select Version</label>
+          <div class="dropdown vr-drop mr-3">
+            <button class="btn btn-light border dropdown-toggle" type="button" id="vr-drop-btn" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+            </button>
+            <div class="dropdown-menu flap-up" aria-labelledby="vr-drop-btn">
+              <!-- <a class="dropdown-item" href="#resume-06-10-2019" data-date="06-10-2019" data-selected="true">Oct 6,
+                    2019</a>
+                  <a class="dropdown-item" href="#resume-10-03-2019?sadasdsa=sadasd" data-date="10-03-2019">Mar 10, 2019</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="form-group mb-0">
+          <label for="vr-drop-btn" class="mb-0">Select Variant</label>
+          <div class="dropdown variant-drop">
+            <button class="btn btn-light border dropdown-toggle" type="button" id="variant-drop-btn"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            </button>
+            <div class="dropdown-menu flap-up" aria-labelledby="variant-drop-btn">
+              <!-- <a class="dropdown-item" href="var=uk" data-date="06-10-2019" data-selected="true">UK &
+                Europe</a>
+              <a class="dropdown-item" href="#resume-10-03-2019" data-date="10-03-2019">Mar 10, 2019</a> -->
+            </div>
           </div>
         </div>
       </div>
@@ -87,6 +102,7 @@
       <i class="fas fa-times on d-none"></i>
     </button>
   </div>
+
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
