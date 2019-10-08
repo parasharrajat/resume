@@ -45,6 +45,7 @@ body {
 main {
   height: 100%;
   flex: 1;
+  position: relative;
 }
 
 iframe {
@@ -56,6 +57,8 @@ iframe {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
+  z-index: 2;
+
 }
 
 #download-btn {
@@ -65,6 +68,20 @@ iframe {
   color: var(--brand-2);
   box-shadow: 0 .5rem 1rem var(--brand-shadow-1) !important;
 }
+
+main .loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--brand-1);
+}
+
+main iframe {
+  position: relative;
+  z-index: 1;
+}
+
 
 @media print {
   body>* {

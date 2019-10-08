@@ -163,7 +163,7 @@ $(document).ready(function () {
     }
     $(this).popover('show');
     $(this).find('i').each((_, e) => $(e).toggleClass('d-none'));
-    let count = 3;
+    let count = 8;
     $("#d-time").text(count);
     // remember that this timer will take 1000ms to start to initial 1sec delay
     intId = setInterval(() => {
