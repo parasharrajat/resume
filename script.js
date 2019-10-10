@@ -32,6 +32,12 @@ function loadPolyfills() {
 
 
 $(document).ready(function () {
+  // Toogle download btn
+  // if (!isChrome) {
+  if (true) {
+    $('#download-btn').remove();
+  }
+
 
   // $('[data-toggle="popover"]').popover();
   // load the correct resume
@@ -43,9 +49,9 @@ $(document).ready(function () {
   const varDropBtn = varDrop.find('#variant-drop-btn');
   const resumeFr = $('#resume-frame');
 
-  resumeFr.on('load', function resizeIframe(e) {
-    this.style.height = this.contentWindow.document.body.scrollHeight + 'px';
-  });
+  // resumeFr.on('load', function resizeIframe(e) {
+  //   this.style.height = this.contentWindow.document.body.scrollHeight + 'px';
+  // });
 
   createVrDropdown();
   fillTheFrame();
@@ -148,10 +154,6 @@ $(document).ready(function () {
         // window.location.assign(url);
       }
     });
-  }
-  // Toogle download btn
-  if (!isChrome) {
-    $('#download-btn').remove();
   }
 
   // set download
