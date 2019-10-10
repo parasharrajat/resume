@@ -43,6 +43,9 @@ $(document).ready(function () {
   const varDropBtn = varDrop.find('#variant-drop-btn');
   const resumeFr = $('#resume-frame');
 
+  resumeFr.on('load', function resizeIframe(e) {
+    this.style.height = this.contentWindow.document.body.scrollHeight + 'px';
+  });
 
   createVrDropdown();
   fillTheFrame();
