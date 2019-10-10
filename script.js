@@ -173,7 +173,10 @@ $(document).ready(function () {
       if (count === 1) {
         $(this).popover('dispose');
         $(this).find('i').each((_, e) => $(e).toggleClass('d-none'));
+        const originalContents = document.innerHTML;
+        document.innerHTML = resumeFr[0].contentWindow.document.innerHTML;
         window.print();
+        document.innerHTML = originalContents;
         clearInterval(intId);
         intId = NaN;
         return;
