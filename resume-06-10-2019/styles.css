@@ -126,3 +126,7 @@ fieldset:last-child {
     background: transparent!important;
   }
 }
+
+.sidebar ul[type="disc"],.sidebar ul[type="square"]{
+  padding-left: 1.2rem;
+}
