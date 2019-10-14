@@ -127,6 +127,10 @@ fieldset:last-child {
   }
 }
 
-.sidebar ul[type="disc"],.sidebar ul[type="square"]{
+.sidebar ul[type="disc"], .sidebar ul[type="square"] {
   padding-left: 1.2rem;
+}
+
+.w-80 {
+  width: 80%;
 }
