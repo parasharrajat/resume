@@ -109,7 +109,7 @@ $(document).ready(function () {
   }
 
   function setFrame(date, variant) {
-    resumeFr.src = `resume-${date}/${variant !== 'universal' ? variant + '/' : ''}index.html`;
+    resumeFr.prop("src", `resume-${date}/${variant !== 'universal' ? variant + '/' : ''}index.html`);
   }
 
   function attachVersionlistner() {
