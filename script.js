@@ -8,6 +8,10 @@ const versions = [{
     title: 'UK & Europe',
   },
   {
+    data: 'freelance',
+    title: 'With Freelance',
+  },
+  {
     data: 'universal',
     title: 'Universal',
   }],
