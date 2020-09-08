@@ -125,6 +125,9 @@ fieldset:last-child {
   table, thead, tbody, tr, td, th, .table td, .table th {
     background: transparent!important;
   }
+  .content{
+    height: 2000px;
+  }
 }
 
 .sidebar ul[type="disc"], .sidebar ul[type="square"] {
